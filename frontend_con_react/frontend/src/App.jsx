@@ -4,7 +4,7 @@ import Menu from "./componentes/Menu.jsx";
 import Clientes from "./componentes/Clientes.jsx";
 import Productos from "./componentes/Productos.jsx";
 import Ventas from "./componentes/Ventas.jsx";
-import DetalleVenta from "./componentes/detalleventa.jsx";
+import DetalleVenta from "./componentes/Detalleventa.jsx";
 function App() {
     return (
         <BrowserRouter>
