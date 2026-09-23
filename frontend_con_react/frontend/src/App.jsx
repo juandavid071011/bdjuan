@@ -5,6 +5,7 @@ import Clientes from "./componentes/Clientes.jsx";
 import Productos from "./componentes/Productos.jsx";
 import Ventas from "./componentes/Ventas.jsx";
 import DetalleVenta from "./componentes/DetalleVenta.jsx";
+
 function App() {
     return (
         <BrowserRouter>
@@ -12,6 +13,7 @@ function App() {
 
             <div className="container mt-4">
                 <Routes>
+                    <Route path="/" element={<Clientes />} />
                     <Route path="/clientes" element={<Clientes />} />
                     <Route path="/productos" element={<Productos />} />
                     <Route path="/ventas" element={<Ventas />} />

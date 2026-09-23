@@ -10,6 +10,7 @@ function Clientes() {
     useEffect(() => {
         api.get('/clientes')
             .then(response => {
+                console.log('DATOS CLIENTES:', response.data);
                 setClientes(response.data);
                 setCargando(false);
             })

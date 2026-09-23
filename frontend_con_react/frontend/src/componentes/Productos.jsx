@@ -10,6 +10,7 @@ function Productos() {
     useEffect(() => {
         api.get('/productos')
             .then(response => {
+                console.log('DATOS PRODUCTOS:', response.data);
                 setProductos(response.data);
                 setCargando(false);
             })

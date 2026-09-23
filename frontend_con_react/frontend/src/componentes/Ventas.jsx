@@ -10,6 +10,7 @@ function Ventas() {
     useEffect(() => {
         api.get('/ventas')
             .then(response => {
+                console.log('DATOS VENTAS:', response.data);
                 setVentas(response.data);
                 setCargando(false);
             })
